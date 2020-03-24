@@ -1,0 +1,13 @@
+[{
+    "nom" : "avocat",
+    "prix": "3"
+},
+{
+    "nom" : "orange",
+    "prix": "4"
+},
+{
+    "nom" : "fraises",
+    "prix": "5"
+}
+]

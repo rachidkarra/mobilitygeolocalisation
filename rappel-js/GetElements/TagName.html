@@ -1,0 +1,29 @@
+<html>
+<body>
+
+<p>La liste:</p>
+<ul>
+  <li>Kiwi</li>
+  <li>Banane</li>
+  <li>Cerises</li>
+</ul>
+
+<p>Copier</p>
+<button onclick="myFunction()">Cliquez pour remplir</button>
+
+<p id="1">1---- </p>
+<p id="2">2---- </p>
+<p id="3">3---- </p>
+
+<script>
+function myFunction() {
+  var x = document.getElementsByTagName("li");
+  //document.getElementById("demo").innerHTML = x[1].innerHTML;
+  for(var i=1; i <= x.length ; i++){
+    document.getElementById(i.toString()).innerHTML =  x[i-1].innerHTML;
+  }
+}
+</script>
+
+</body>
+</html>
