@@ -1,0 +1,18 @@
+extends layout
+
+block content
+  a(href='./') Retour
+  div#loadmap
+  h3 Tableau des favoris
+  if locations.length
+    table
+      tr
+        th Nom
+        th LatLng
+      each location in locations
+        tr
+          td= location.nom
+          td= location.latlng
+  else
+    p Pas d'emplacements trouvés
+  

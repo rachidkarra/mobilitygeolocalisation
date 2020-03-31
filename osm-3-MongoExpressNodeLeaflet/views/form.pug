@@ -1,0 +1,24 @@
+extends layout
+
+block content
+    a(href='./favoris') Voir mes favoris
+    div#mapid
+    h2 (Cliquez pour spécifier les coordonnées)
+    form(action="." method="POST")
+        label(for="latlng") LatLng:
+        br
+        input(
+            type="text"
+            id="latlng"
+            name="latlng"
+        )
+        br
+        label(for="nom") Nom:
+        br
+        input(
+            type="text"
+            id="nom"
+            name="nom"
+        )
+        br
+        input(type="submit" value="Enregister")
